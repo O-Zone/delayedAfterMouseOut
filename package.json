@@ -1,0 +1,11 @@
+{
+  "name": "closeonmouseout",
+  "version": "1.0.0",
+  "description": "Knockout custom binding closeonmouseout that removes a class a couple of seconds after mouseout.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hasse Feldthaus",
+  "license": "WTFPL"
+}
