@@ -4,16 +4,19 @@
   "description": "Knockout custom binding closeonmouseout that removes a class a couple of seconds after mouseout.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm css/*.css",
+    "start": "lessc less/styles.less css/styles.css && budo js/index.js --open --live"
   },
   "author": "Hasse Feldthaus",
   "license": "WTFPL",
+  "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "budo": "^11.5.0",
     "jquery": "^3.3.1"
   },
   "devDependencies": {
+    "budo": "^11.5.0",
     "less": "^3.8.1"
   }
 }
