@@ -1,3 +1,37 @@
 *{
     box-sizing: border-box;
 }
+
+@color-background-white: #eee;
+@color-dark-grey: #333;
+@color-darker-grey: darken(@color-dark-grey, 10%);
+
+body{
+    background-color: @color-background-white;
+    color:@color-dark-grey;
+
+    .container{
+        position: relative;
+        padding:20px;
+        .menu{
+            .closeBtn{
+                position:absolute;
+                top:3px;
+                right:10px;
+                cursor: pointer;
+            }
+            background-color: @color-background-white;
+            position:absolute;
+            top:30px;
+            left:50px;
+            padding:20px 50px;
+            box-shadow: 3px 4px 6px @color-dark-grey;
+            border:1px solid @color-darker-grey;
+            ul{
+                list-style: inside;
+                list-style-type: none;
+                padding:0;
+            }
+        }
+    }
+}
