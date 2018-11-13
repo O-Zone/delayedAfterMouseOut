@@ -10,9 +10,6 @@ class AppViewModel {
     }
 }
 
-AppViewModel.prototype = {
-}
-
 $(document).ready(()=>{
     ko.applyBindings(new AppViewModel());
 });

@@ -1,1 +1,1 @@
-console.log('Success fra serveren!');
+console.log('No server on this baby!');
