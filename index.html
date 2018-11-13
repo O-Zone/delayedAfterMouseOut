@@ -4,15 +4,17 @@
         <title>knockout closeOnMouseOut custom binding</title>
         <meta charset="utf-8">
         <link rel="fonts" href="node_modules\bootstrap\dist\fonts\glyphicons-halflings-regular.svg"></link>
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
-        <link rel="stylesheet" href="css/styles.css"></link>
+        <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css"></link>
+        <link rel="stylesheet" href="css\styles.css"></link>
         <script src="node_modules\jquery\dist\jquery.min.js"></script>
         <script src="node_modules\knockout\build\output\knockout-latest.js"></script>
-        <script src="js/AppViewModel.js"></script>
+        <script src="js\slideVisible.js"></script>
+        <script src="js\delayedAfterMouseOut.js"></script>
+        <script src="js\AppViewModel.js"></script>
     </head>
     <body>
         <div class="container">
-            <div class="menu" data-bind="visible: showMenu">
+            <div class="menu" data-bind="slideVisible: showMenu, delayedAfterMouseOut: {cb: closeMenu, delay: 500}">
                     <div class="closeBtn" data-bind="click: closeMenu"><span class="glyphicon glyphicon-close">X</span></div>
                     <ul>
                         <li><a href="#">Option 1</a></li>
